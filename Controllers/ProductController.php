@@ -10,6 +10,6 @@ class ProductController
 
         $title = 'Welcome to the products page';
         $welcomeText = 'Welcome to the products page';
-        require 'View/homepage.php';
+        require 'View/products.php';
     }
 }

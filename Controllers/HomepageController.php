@@ -7,6 +7,5 @@ class HomepageController
         $title = 'Welcome to the homepage';
         $welcomeText = 'Welcome to the homepage';
         require 'View/homepage.php';
-
     }
 }

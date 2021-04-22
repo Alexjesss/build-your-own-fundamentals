@@ -1,0 +1,93 @@
+body {
+    background-color: #fffff0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+h5, h3 {
+    margin: auto;
+    width: 485px;
+    padding: 30px;
+}
+
+h2 {
+    padding: 10px;
+    color: #fffff0;
+}
+
+a {
+    color: #dd6e6e;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fffff0;
+    text-decoration: none;
+}
+
+
+.article {
+    padding: 15px;
+    font: 1rem 'Fira Sans', sans-serif;
+    width: 320px;
+    height: 500px;
+    display: table-cell;
+    background-color: lightcoral;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.products {
+    padding: 15px;
+    font: 1rem 'Fira Sans', sans-serif;
+    width: 320px;
+    height: 500px;
+    display: inline;
+    background-color: lightcoral;
+    text-align: center;
+    margin: auto;
+}
+
+.container{
+    display: inline;
+    width: 100%;
+}
+
+.navbar {
+    background-color: darkseagreen;
+    box-shadow: 0 0 3px #5d705d;
+    z-index: 1;
+    position: relative;
+}
+
+.footer {
+    background-color: #4a5747;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    padding-top: 2rem;
+    margin-top: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.footer .container {
+    padding-left: 12%;
+    padding-right: 12%;
+    position: relative;
+}
+
+.copyright {
+    font-weight: bold;
+    color: #fffff0;
+}

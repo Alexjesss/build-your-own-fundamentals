@@ -3,7 +3,7 @@
 
 class ProductController
 {
-    public function render(array $GET, array $POST): void
+    public function render(): void
     {
         $loader = new ProductLoader();
         $products = $loader->AllProducts();

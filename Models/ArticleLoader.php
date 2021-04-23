@@ -2,11 +2,11 @@
 
 class ArticleLoader extends Database
 {
-    public function Article($id): ?array
+    public function Article(string $slug)
     {
         $pdo = $this->openConnection();
-        $handle = $pdo->prepare('SELECT * FROM articles WHERE articles.id = :id');
-        $handle->bindValue(':id', $id);
+        $handle = $pdo->prepare('SELECT * FROM Articles WHERE slug = :slug');
+        $handle->bindValue(':slug', $slug);
         $handle->execute();
         return $handle->fetch();
     }

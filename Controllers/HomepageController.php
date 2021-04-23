@@ -2,7 +2,7 @@
 
 class HomepageController
 {
-    public function render(array $GET, array $POST): void
+    public function render(): void
     {
         $title = 'Welcome to the homepage';
         $welcomeText = 'Welcome to the homepage';

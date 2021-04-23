@@ -5,16 +5,18 @@ require 'includes/header.php'
 /** @var string $welcomeText */
 ?>
 
-<h3><?php echo $welcomeText; ?></h3>
+<section class="mx-auto text-center">
+    <h3><?php echo $welcomeText; ?></h3>
 
-<?php foreach ($products as $product) : ?>
-<div class="col-6 products">
-        <div>
-            <h2><?= $product['name'] ?></h2>
-            <p>Price (tax included): €<?= round($product['price'] * (1 + $product['tax']), 2) ?></p>
+    <?php foreach ($products as $product) : ?>
+        <div class="col-6 products">
+            <div>
+                <h2><?= $product['name'] ?></h2>
+                <p>Price (tax included): €<?= round($product['price'] * (1 + $product['tax']), 2) ?></p>
+            </div>
         </div>
-</div>
-<?php endforeach; ?>
+    <?php endforeach; ?>
+</section>
 
 <?php require 'includes/footer.php' ?>
 
